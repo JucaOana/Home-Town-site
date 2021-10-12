@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html{
+    font-family: 'Impact',sans-serif;
+    color: white;
+    overflow-x: hidden;
+   
+}
+
+.landing{
+background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100h;
+    background-position: center;
+    opacity: 0.94;
+    z-index: 1;
+ 
+    
+}
+
+.landingWrapper{
+
+}
+.nav{
+    display: flex;
+    position:fixed;
+    background-color: #141414;
+    width: 100%;
+    height:80px;
+    z-index: 30;
+}
+
+.titlu{
+    float: right;
+    
+}
+
+.titlu img{
+    width:200px;
+    height: 100%;
+    margin:4px 8px;
+    transition: all 300ms ease-in-out;
+}
+.titlu img:hover{
+    opacity: 0.8;
+    width:210px;
+    margin-right:20px;
+    transition: all 300ms ease-in-out;
+}
+
+/***js menu*****/
+#toggle-menu{
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+    width: 70px;
+    padding: .8em;
+  
+}
+#toggle-menu:hover{
+    opacity: 0.6;
+}
+.menu{
+    width:20%;
+    background-color: black;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: -100%;
+    z-index: 1000;
+    transition: all ease-in-out 300ms;
+}
+.ul1{
+    font-family: 'IMPACT';
+     width: 91%;
+    font-weight: 100;
+    margin: auto;
+    margin-top: 90px;
+    list-style-type: none;
+    text-align: center;
+}
+.ul1 li{
+    margin-top: 2em;
+    border-bottom: white 1px solid;
+    border-radius: 2px;
+}
+.ul1 li:hover{
+    background-color:#2B2B2B;
+   
+}
+.ul1 a{
+   color: white;
+  text-decoration: none;
+    font-size: 30px;
+    padding: 0.4em 0.6em;
+}
+
+.ul2 {
+    margin-top: -30px;
+    font-weight: 300;
+    font-size: 22px;
+    list-style-type: none;
+   width: 90%;
+    margin: auto;
+    text-align: center;
+    display: none;
+    transition: all ease-in-out 3s;
+    border-bottom:white 1px solid;
+}
+
+.ul2 li{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    opacity: 0.7;
+}
+.ul2 a{
+    font-family: 'Franklin Gothic';
+   color: white;
+  text-decoration: none;
+    font-size: 30px;
+    padding: 0.4em 0.6em;
+    vertical-align: middle;
+    
+
+}
+.ul2 li:hover{
+    background-color:#2B2B2B;
+    opacity: 0.3;
+}
+.nav2{
+    text-align: center;
+    
+}
+.nav h1{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 0.1em 0.3em;
+    font-size:50px;
+    font-weight: 300;
+}
+
+.container{
+    padding: 110px;
+    background-color: #6a6a6a;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+figure{
+    
+    display: block;
+    margin: 0 auto;
+   width:50%;
+    background-color: none;
+    transition: all 300ms ease-in-out;
+   margin-bottom: 60px;
+    margin-top:30px;
+}
+figure h3{
+   
+    font-size: 70px;
+  font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-left: 150px;
+}
+.sportHover img{
+    padding: 1rem;
+    width: 400px;
+    height: 300px;
+}
+.sportHover{
+    display: flex;
+}
+.sportHover p{
+     width:60%;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    
+}
+figure:hover .sportHover p{
+   
+   display: block;
+}
+figure:hover{
+    width:50%;
+    transform: scale(1.07);
+    background-color:rgb(74, 74, 74);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    
+}
+figure:hover .sportHover img
+{
+    opacity: 0.9;
+}
+
+@media only screen and (max-width:1000px){
+    .sportHover{
+    display: block;
+}
+    figure{
+        width: 100%;
+    }
+    .sportHover p{
+     width:90%;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    
+}
+    figure:hover{
+    width:100%;
+    transform: scale(1.07);
+    background-color:rgb(74, 74, 74);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    
+}
+    .menu{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    .sportHover{
+    display: block;
+}
+    figure{
+        width: 100%;
+    }
+    .sportHover p{
+     width:70%;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    
+}
+    figure:hover{
+    width:110%;
+    transform: scale(1.01);
+    background-color:rgb(74, 74, 74);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    
+}
+    .sportHover img{
+    padding: 1rem;
+    width: 180px;
+    height: 110px;
+}
+    figure h3{
+   
+    font-size: 50px;
+  font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-left: 50px;
+}
+   
+}
